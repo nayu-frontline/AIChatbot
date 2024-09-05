@@ -1,4 +1,4 @@
-# AIChatbot for VRC/cluster
+# AIChatbot for VRC/cluster/Etc
 
 ![AIChatbot Architecture Overview](overview.png)
 
