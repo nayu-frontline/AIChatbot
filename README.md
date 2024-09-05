@@ -98,3 +98,32 @@ Mac単体で使用する場合:
 
 ※Pythonの入出力については、はmain.py実行後に設定します。
 
+
+# ☕️ Windows版の準備物
+
+# 🚩Windows版のインストール
+
+```
+9月中旬に公開予定
+```
+
+## Google APIの設定
+```
+```
+
+## OpenAI APIの設定
+
+main.pyの15行目に取得したOpenAIのAPIキーを入力してください。この方式に従わずに、環境変数を使用しても良いです。
+```
+client = OpenAI(api_key='あなたのAPIキー')
+```
+
+## 仮想オーディオの設定
+
+
+
+# 🚀 実行
+
+
+# LICENSE
+MIT LICENSE
