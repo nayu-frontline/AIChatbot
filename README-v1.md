@@ -1,18 +1,22 @@
-## リポジトリについて
+# AIChatbot for VRC/cluster
 
-GUIやPowerShellスクリプトなど、より使いやすくする機能が[bmaltais氏のリポジトリ](https://github.com/bmaltais/kohya_ss)で提供されています（英語です）のであわせてご覧ください。bmaltais氏に感謝します。
+![AIChatbot Architecture Overview](overview.png)
 
-以下のスクリプトがあります。
+# ✨ 特徴
 
-* DreamBooth、U-NetおよびText Encoderの学習をサポート
-* fine-tuning、同上
-* LoRAの学習をサポート
-* 画像生成
-* モデル変換（Stable Diffision ckpt/safetensorsとDiffusersの相互変換）
-
+* VRChat、cluster、その他のメタバースプラットフォーム、さらには現実世界のデバイスでも使用可能
+* GPT-4o-miniやGoogle STT/TTSを使用するため、スペックによらず高速なリアルタイム会話が可能
+* 会話履歴の保存が可能。
+* Windows、Macで実行可能。
 
 
-## Macでの動作に必要なプログラム
+# ☕️Requirements
+
+- GoogleのAPIキー（Speech-to-Text、Text-to-Speech）
+- OpenAIのAPIキー（ChatGPT）
+- Python 3.10 (Runtime)
+
+
 
 - Homebrew: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 コマンド実行後にパスを通すための指示が出るので、それに従ってください。
@@ -35,7 +39,7 @@ pip3 install --upgrade -r requirements.txt
 ```
 export PATH=$PATH:/opt/homebrew/bin/
 ```
-なお、.zshrcファイルは隠しファイルとして設定されるので、ユーザディレクトでshiftキーと.キーを同時に押すことで表示できます。
+なお、.zshrcファイルは隠しファイルとして設定されるので、ユーザディレクトでcommand、shift、.キーを同時に押すことで表示できます。
 もし.zshrcファイルがなければ、以下のコマンドを実行してファイルを作成し、作成したファイルを開いて上記を追記してください。
 
 ```terminal
